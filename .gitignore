@@ -1,0 +1,13 @@
+*.sif
+ros_noetic_sandbox/
+
+
+bimanual_ws/build/
+bimanual_ws/devel/
+bimanual_ws/log/
+
+*.bag
+*.log
+*.pyc
+__pycache__/
+
