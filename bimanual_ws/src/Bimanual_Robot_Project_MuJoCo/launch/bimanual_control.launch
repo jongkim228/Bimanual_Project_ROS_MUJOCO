@@ -8,6 +8,19 @@
          command="$(find xacro)/xacro $(find bimanual_robot_project_mujoco)/urdf/bimanual_panda.urdf.xacro" />
 
   <rosparam file="$(arg mujoco_plugin_config)" command="load" />
+  <rosparam file="$(find left_panda_bottle_pose_controller)/config/controller.yaml" command="load" ns="left" />
+  <group ns="left">
+    <param name="arm_id" value="left" />
+    <param name="m_ee" value="0.73" />
+    <param name="I_ee" value="0.001 0 0 0 0.0025 0 0 0 0.0017" />
+    <param name="F_x_Cee" value="-0.01 0 0.03" />
+  </group>
+  <group ns="right">
+    <param name="arm_id" value="right" />
+    <param name="m_ee" value="0.73" />
+    <param name="I_ee" value="0.001 0 0 0 0.0025 0 0 0 0.0017" />
+    <param name="F_x_Cee" value="-0.01 0 0.03" />
+  </group>
 
   <env name="ROSCONSOLE_FORMAT" value="[${severity}] [${time}] [${logger}] [${node}]: ${message}"/>
   <env if="$(arg verbose)" name="ROSCONSOLE_CONFIG_FILE"
@@ -17,7 +30,4 @@
     <arg name="use_sim_time" value="true" />
   </include>
 
-  <node pkg="controller_manager" type="spawner" name="controller_spawner"
-        args="joint_state_controller left_arm_controller right_arm_controller"
-        output="screen" />
 </launch>

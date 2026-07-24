@@ -127,7 +127,7 @@ TEST_P(GripperFailGraspFixtureTest, CanFailGrasp) {  // NOLINT(cert-err58-cpp)
 }
 
 INSTANTIATE_TEST_CASE_P(
-    DISABLED_GripperFailGraspFixtureTest,  // NOLINT(cert-err58-cpp)
+    GripperFailGraspFixtureTest,  // NOLINT(cert-err58-cpp)
     GripperFailGraspFixtureTest,
     ::testing::Combine(::testing::Values(std::make_tuple(0.04, 0.1, 0., 0.005, 0.005, 0.1),
                                          std::make_tuple(0.02, 0.1, 2., 0.01, 0.01, 0.1),
@@ -135,7 +135,7 @@ INSTANTIATE_TEST_CASE_P(
                        ::testing::Values(0, 0.1)));
 
 INSTANTIATE_TEST_CASE_P(
-    DISABLED_GripperGraspFixtureTest,  // NOLINT(cert-err58-cpp)
+    GripperGraspFixtureTest,  // NOLINT(cert-err58-cpp)
     GripperGraspFixtureTest,
     ::testing::Combine(::testing::Values(std::make_tuple(0.032, 0.1, 100., 0.01, 0.01, 0.1),
                                          std::make_tuple(0.03, 0.1, 30., 0.005, 0.005, 0.1),

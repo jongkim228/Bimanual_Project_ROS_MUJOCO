@@ -20,25 +20,63 @@
   </link>
 
   <xacro:panda_arm arm_id="left" connected_to="base" xyz="0 0.5 1" safety_distance="0.03"/>
-  <xacro:hand arm_id="left" rpy="0 0 ${-pi/4}" connected_to="left_link8" safety_distance="0.03"/>
+<xacro:hand arm_id="left" rpy="0 0 ${-pi/4}" connected_to="left_link8" safety_distance="0.03"/>
 
-  <xacro:gazebo-joint joint="left_joint1" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="left_joint2" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="left_joint3" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="left_joint4" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="left_joint5" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="left_joint6" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="left_joint7" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="left_joint1" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="left_joint2" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="left_joint3" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="left_joint4" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="left_joint5" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="left_joint6" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="left_joint7" transmission="hardware_interface/PositionJointInterface" />
 
-  <xacro:panda_arm arm_id="right" connected_to="base" xyz="0 -0.5 1" safety_distance="0.03"/>
-  <xacro:hand arm_id="right" rpy="0 0 ${-pi/4}" connected_to="right_link8" safety_distance="0.03"/>
+<xacro:gazebo-joint joint="left_joint1" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="left_joint2" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="left_joint3" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="left_joint4" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="left_joint5" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="left_joint6" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="left_joint7" transmission="hardware_interface/VelocityJointInterface" />
 
-  <xacro:gazebo-joint joint="right_joint1" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="right_joint2" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="right_joint3" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="right_joint4" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="right_joint5" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="right_joint6" transmission="hardware_interface/PositionJointInterface" />
-  <xacro:gazebo-joint joint="right_joint7" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="left_joint1" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="left_joint2" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="left_joint3" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="left_joint4" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="left_joint5" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="left_joint6" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="left_joint7" transmission="hardware_interface/EffortJointInterface" />
 
+<xacro:transmission-franka-state arm_id="left" />
+<xacro:transmission-franka-model arm_id="left" root="left_joint1" tip="left_joint8" />
+
+<xacro:panda_arm arm_id="right" connected_to="base" xyz="0 -0.5 1" safety_distance="0.03"/>
+<xacro:hand arm_id="right" rpy="0 0 ${-pi/4}" connected_to="right_link8" safety_distance="0.03"/>
+
+<xacro:gazebo-joint joint="right_joint1" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="right_joint2" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="right_joint3" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="right_joint4" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="right_joint5" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="right_joint6" transmission="hardware_interface/PositionJointInterface" />
+<xacro:gazebo-joint joint="right_joint7" transmission="hardware_interface/PositionJointInterface" />
+
+<xacro:gazebo-joint joint="right_joint1" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="right_joint2" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="right_joint3" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="right_joint4" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="right_joint5" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="right_joint6" transmission="hardware_interface/VelocityJointInterface" />
+<xacro:gazebo-joint joint="right_joint7" transmission="hardware_interface/VelocityJointInterface" />
+
+<xacro:gazebo-joint joint="right_joint1" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="right_joint2" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="right_joint3" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="right_joint4" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="right_joint5" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="right_joint6" transmission="hardware_interface/EffortJointInterface" />
+<xacro:gazebo-joint joint="right_joint7" transmission="hardware_interface/EffortJointInterface" />
+
+
+<xacro:transmission-franka-state arm_id="right" />
+<xacro:transmission-franka-model arm_id="right" root="right_joint1" tip="right_joint8" />
 </robot>

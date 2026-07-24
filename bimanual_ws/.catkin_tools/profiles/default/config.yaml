@@ -1,0 +1,29 @@
+authors: []
+blacklist:
+- combined_robot_hw_tests
+- controller_manager_tests
+build_space: build
+catkin_make_args: []
+cmake_args:
+- -DMUJOCO_DIR=/home/scstln/mujoco-3.3.5
+- -DCMAKE_CXX_STANDARD=17
+- -DCMAKE_CXX_FLAGS=-Wno-error=pedantic -Wno-error=extra-semi
+- -DBUILD_PYTHON_BINDINGS=OFF
+- -DCMAKE_PREFIX_PATH=/home/scstln/jonghynun/bimanual_ws/devel;/home/scstln/jonghynun/bimanual_ws/isolated_libfranka;/opt/ros/noetic
+devel_layout: linked
+devel_space: devel
+extend_path: /opt/ros/noetic
+extends: null
+install: false
+install_space: install
+isolate_install: false
+jobs_args: []
+licenses:
+- TODO
+log_space: logs
+maintainers: []
+make_args: []
+source_space: src
+use_env_cache: false
+use_internal_make_jobserver: true
+whitelist: []

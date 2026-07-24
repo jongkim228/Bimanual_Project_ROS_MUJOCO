@@ -1,0 +1,6 @@
+franka_ros_mujoco
+/home/scstln/jonghynun/bimanual_ws/devel/.private/franka_mujoco/lib/libfranka_hw_sim_mujoco.so /home/scstln/jonghynun/bimanual_ws/devel/lib/libfranka_hw_sim_mujoco.so
+/home/scstln/jonghynun/bimanual_ws/devel/.private/franka_mujoco/lib/libfranka_gripper_sim_mujoco.so /home/scstln/jonghynun/bimanual_ws/devel/lib/libfranka_gripper_sim_mujoco.so
+/home/scstln/jonghynun/bimanual_ws/devel/.private/franka_mujoco/lib/pkgconfig/franka_mujoco.pc /home/scstln/jonghynun/bimanual_ws/devel/lib/pkgconfig/franka_mujoco.pc
+/home/scstln/jonghynun/bimanual_ws/devel/.private/franka_mujoco/share/franka_mujoco/cmake/franka_mujocoConfig-version.cmake /home/scstln/jonghynun/bimanual_ws/devel/share/franka_mujoco/cmake/franka_mujocoConfig-version.cmake
+/home/scstln/jonghynun/bimanual_ws/devel/.private/franka_mujoco/share/franka_mujoco/cmake/franka_mujocoConfig.cmake /home/scstln/jonghynun/bimanual_ws/devel/share/franka_mujoco/cmake/franka_mujocoConfig.cmake

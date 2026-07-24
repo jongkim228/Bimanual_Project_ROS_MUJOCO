@@ -13,7 +13,6 @@ find_package(catkin REQUIRED COMPONENTS
   franka_gripper
   geometry_msgs
   hardware_interface
-  joint_limits_interface
   tf
   tf_conversions
   message_generation
@@ -21,8 +20,6 @@ find_package(catkin REQUIRED COMPONENTS
   realtime_tools
   roscpp
   rospy
-  urdf
-  visualization_msgs
 )
 
 find_package(Eigen3 REQUIRED)
@@ -56,15 +53,12 @@ catkin_package(
     franka_gripper
     geometry_msgs
     hardware_interface
-    joint_limits_interface
     tf
     tf_conversions
     message_runtime
     pluginlib
     realtime_tools
     roscpp
-    urdf
-    visualization_msgs
   DEPENDS Franka
 )
 
@@ -80,7 +74,6 @@ add_library(franka_example_controllers
   src/force_example_controller.cpp
   src/dual_arm_cartesian_impedance_example_controller.cpp
   src/teleop_joint_pd_example_controller.cpp
-  src/joint_wall.cpp
 )
 
 add_dependencies(franka_example_controllers

@@ -1,4 +1,5 @@
 <mujoco model="panda scene">
+
   <include file="panda_assets.xml"/>
   <include file="panda_left.xml"/>
   <include file="panda_right.xml"/>

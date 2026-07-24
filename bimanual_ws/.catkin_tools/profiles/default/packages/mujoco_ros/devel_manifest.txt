@@ -6,7 +6,6 @@ mujoco_ros_pkgs/mujoco_ros
 /home/scstln/jonghynun/bimanual_ws/devel/.private/mujoco_ros/lib/mujoco_ros/mujoco_node /home/scstln/jonghynun/bimanual_ws/devel/lib/mujoco_ros/mujoco_node
 /home/scstln/jonghynun/bimanual_ws/devel/.private/mujoco_ros/lib/mujoco_ros/python_bindings_plugin_test.py /home/scstln/jonghynun/bimanual_ws/devel/lib/mujoco_ros/python_bindings_plugin_test.py
 /home/scstln/jonghynun/bimanual_ws/devel/.private/mujoco_ros/lib/pkgconfig/mujoco_ros.pc /home/scstln/jonghynun/bimanual_ws/devel/lib/pkgconfig/mujoco_ros.pc
-/home/scstln/jonghynun/bimanual_ws/devel/.private/mujoco_ros/lib/python3/dist-packages/pymujoco_ros.cpython-38-x86_64-linux-gnu.so /home/scstln/jonghynun/bimanual_ws/devel/lib/python3/dist-packages/pymujoco_ros.cpython-38-x86_64-linux-gnu.so
 /home/scstln/jonghynun/bimanual_ws/devel/.private/mujoco_ros/lib/python3/dist-packages/mujoco_ros/__init__.py /home/scstln/jonghynun/bimanual_ws/devel/lib/python3/dist-packages/mujoco_ros/__init__.py
 /home/scstln/jonghynun/bimanual_ws/devel/.private/mujoco_ros/lib/python3/dist-packages/mujoco_ros/cfg/__init__.py /home/scstln/jonghynun/bimanual_ws/devel/lib/python3/dist-packages/mujoco_ros/cfg/__init__.py
 /home/scstln/jonghynun/bimanual_ws/devel/.private/mujoco_ros/lib/python3/dist-packages/mujoco_ros/cfg/SimParamsConfig.py /home/scstln/jonghynun/bimanual_ws/devel/lib/python3/dist-packages/mujoco_ros/cfg/SimParamsConfig.py
